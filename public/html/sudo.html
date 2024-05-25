@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fevicon  -->
+  <link rel="apple-touch-icon" href="/img/favicon.ico">
+  <link rel="shortcut icon" href="../img/logo192.png" type="image/x-icon">
+
+  <!-- font  -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+
+  <!-- iocn  -->
+  <script src="https://kit.fontawesome.com/30f56286fa.js" crossorigin="anonymous"></script>
+
+  <!-- bootstrap and stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="../stylesheet/animate.css">
+  <link rel="stylesheet" href="../stylesheet/style.css">
+  <link rel="stylesheet" href="../stylesheet/menu.css">
+  <link rel="stylesheet" href="../stylesheet/responsive.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Company Profile</title>
+</head>
+
+<body onload="myfunction()">
+   <!-- preloader  -->
+   <div id="loading">
+    <div class="load">
+      <div class="gear one">
+        <svg id="blue" viewbox="0 0 100 100" fill="#94DDFF">
+          <path
+            d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z">
+          </path>
+        </svg>
+      </div>
+      <div class="gear two">
+        <svg id="pink" viewbox="0 0 100 100" fill="#FB8BB9">
+          <path
+            d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z">
+          </path>
+        </svg>
+      </div>
+      <div class="gear three">
+        <svg id="yellow" viewbox="0 0 100 100" fill="#FFCD5C">
+          <path
+            d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z">
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+    <header class="header sticky" id="navbar">
+        <nav class="navbar p-0">
+          <div class="container mt-3 mt-sm-0">
+            <button class="menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbardata"
+              aria-controls="navbardata" style="background-color: #eae8d7;" data-bs-toggle="tooltip"
+              data-bs-placement="bottom" title="Menu">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </button>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <form class="d-flex input-group flex-wrap" role="search" id="serform">
+                <input class="form-control" type="text" name="search" id="src">
+                <button class="input-group-text formbtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+              <div class="navbar-brand">
+                <a href="../index.html"><img src="../img/logo.png" alt="img" class="img-fluid"></a>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-collapse collapse" id="navbardata">
+            <ul class="navbar-nav text-center fs-3">
+              <li class="nav-item"><a href="../index.html" class="nav-link active">Home</a></li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link  dropdown-toggle" id="dropdownM" data-bs-toggle="dropdown" aria-expanded="false"
+                  role="button">About US</a>
+                <ul class="dropdown-menu text-center fs-3" aria-labelledby="dropdownM"
+                  style="background-color:#eae8d7; border: none;">
+                  <li><a class="dropdown-item" href="#">Company Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Infrastructure</a></li>
+                  <li><a class="dropdown-item" href="#">Certificates</a></li>
+                  <li><a class="dropdown-item" href="#">Chairman's Message</a></li>
+                  <li><a class="dropdown-item" href="#">Leadership</a></li>
+                </ul>
+              </li>
+    
+              <li class="nav-item"><a href="../html/product.html" class="nav-link">Product</a></li>
+              <li class="nav-item"><a href="../html/map.html" class="nav-link">Export</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Contact US</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+  <section>
+    <div id="slider">
+        <ul>
+          <li><img src="../img/sudo.png" alt="image description" class="d-block w-100 img-fluid" height="700" />
+          </li>
+          <li><img src="../img/sudo2.png" alt="image description" class="d-block w-100 img-fluid" height="700" />
+          </li>
+          <li><img src="../img/sudo3.png" alt="image description" class="d-block w-100 img-fluid" height="700" />
+          </li>
+          <li><img src="../img/sudo4.png" alt="image description" class="d-block w-100 img-fluid" height="700" />
+          </li>
+        </ul>
+      </div>
+  </section>
+
+    <div class="py-5" style="background-color:#0b5e98;color:#eae8d7;">
+        <section class="container text-center text-sm-start py-sm-5 animate__animated animate__fadeInRight">
+            <div class="row">
+                <div class="col-12 col-xl-3 col-lg-12 p-0 my-4 wow fadeInRight">
+                    <h1 class="h3">Our Company</h1>
+                    <hr style="height: 2px; background-color: #e8e7da;">
+                    <h6 class="h6"><a href="#" class="nav-link">What We Do</a></h6>
+                    <h6 class="h6"><a href="#" class="nav-link">How We Can Help</a></h6>
+                    <h6 class="h6"><a href="#" class="nav-link">Our Team</a></h6>
+                    <h6 class="h6"><a href="#" class="nav-link">Press Releases</a></h6>
+                    <h6 class="h6"><a href="#" class="nav-link">Our Works</a></h6>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-12 p-0 my-4 wow fadeInRight " data-wow-delay="0.2s">
+                    <h1 class="h3">Resources</h1>
+                    <hr style="height: 2px; background-color: #e8e7da;">
+                    <h6 class="h6"><a href="#" class="nav-link">Content Marketing Matrix</a></h6>
+                    <h6 class="h6"><a href="#" class="nav-link">Social Media Templates</a></h6>
+                    <h6 class="h6"><a href="#" class="nav-link">Branding Questionnaire</a></h6>
+                    <h6 class="h6"><a href="#" class="nav-link">Campaign Roadmap</a></h6>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-12 p-0 my-4 wow fadeInRight" data-wow-delay="0.3s">
+                    <h1 class="h3">Get In Touch</h1>
+                    <hr style="height: 2px; background-color: #e8e7da;">
+                    <h6 class="h6"><a href="#" class="nav-link">Careers</a></h6>
+                    <h6 class="h6"><a href="#" class="nav-link">Plans & Pricing</a></h6>
+                    <h6 class="h6"><a href="#" class="nav-link">Partnerships</a></h6>
+                    <h6 class="h6"><a href="#" class="nav-link">Social Media</a></h6>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-12 p-0 my-4 wow fadeInRight" data-wow-delay="0.4s">
+                    <h1 class="h3">Legal</h1>
+                    <hr style="height: 2px; background-color: #e8e7da;">
+                    <h6 class="h6"><a href="#" class="nav-link">Terms & Conditions</a></h6>
+                    <h6 class="h6"><a href="#" class="nav-link">Privacy Policy</a></h6>
+                    <h6 class="h6"><a href="#" class="nav-link">Copyright</a></h6>
+                    <h6 class="h6"><a href="#" class="nav-link">Cookies Policy</a></h6>
+                </div>
+            </div>
+        </section>
+        <!-- footer item end -->
+        <!-- footer start  -->
+        <footer class="footer pt-5">
+            <div class="container p-0">
+                <p class="wow bounceIn">COPYRIGHT 2021 VUECIAL MEDIA AGENCY ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+        <!-- end footer  -->
+    </div>
+    <!-- scroll to top  -->
+    <a href="#" id="return-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- menual js  -->
+    <script src="../javascript/menu.js"></script>
+
+    <script src="../javascript/wow.min.js" crossorigin="anonymous"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-102px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+        var wow = new WOW(
+            {
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset: 0,
+                mobile: true,
+                live: true,
+                callback: function (box) { },
+                scrollContainer: null,
+                resetAnimation: true,
+            }
+        );
+        wow.init();
+    </script>
+    <script src="../javascript/jquery.sudoSlider.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+          var sudoSlider = $("#slider").sudoSlider({
+            effect: "blinds1Up, blinds1Down, blinds1Left, blinds1Right, slice, zip, boxRandom, zipDown, boxRainDown, boxRainFlyInUp ,boxSpiral*Grow, fade, fold",
+            auto: true,
+            prevNext: false,
+            continuous: true,
+            infinite: true,
+            touch: false,
+            mouseTouch: false,
+            touchHandle: false
+          });
+        });
+      </script>
+        <script>
+            // ===== Scroll to Top ==== 
+            $(window).scroll(function () {
+              if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+              } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+              }
+            });
+            $('#return-to-top').click(function () {      // When arrow is clicked
+              $('body,html').animate({
+                scrollTop: 0                       // Scroll to top of body
+              }, 500);
+            });
+          </script>
+    
+    
+      <!-- jquery for slick slider -->
+      <script>
+        $(document).ready(function () {
+          $(".slider").slick();
+        });
+      </script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+      <script src="../javascript/contactus.js"></script>
+    
+    
+      <script>
+        var arcuOptions;
+        var arCuPromptClosed = false;
+        var arCuDelayFirst = 500;
+        var _arCuTimeOut = null;
+        var arCuDelayFirst = 2000;
+        var arCuTypingTime = 2000;
+        var arCuMessageTime = 4000;
+        var arCuCloseLastMessage = false;
+        var arCuLoop = false;
+        function arCuShowMessage(index) {
+          if (arCuPromptClosed) {
+            return false;
+          }
+          if (typeof arCuMessages[index] !== 'undefined') {
+            jQuery('#contact').contactUs('showPromptTyping');
+    
+            _arCuTimeOut = setTimeout(function () {
+              if (arCuPromptClosed) {
+                return false;
+              }
+              jQuery('#contact').contactUs('showPrompt', {
+                content: arCuMessages[index]
+              });
+              index++;
+              _arCuTimeOut = setTimeout(function () {
+                if (arCuPromptClosed) {
+                  return false;
+                }
+                arCuShowMessage(index);
+              }, arCuMessageTime);
+            }, arCuTypingTime);
+          } else {
+            if (arCuCloseLastMessage) {
+              jQuery('#contact').contactUs('hidePrompt');
+            }
+            if (arCuLoop) {
+              arCuShowMessage(0);
+            }
+          }
+        };
+        function arCuShowMessages() {
+          setTimeout(function () {
+            clearTimeout(_arCuTimeOut);
+            arCuShowMessage(0);
+          }, arCuDelayFirst);
+        }
+        window.addEventListener('load', function () {
+          $('#contact').on('arcontactus.init', function () {
+            arCuShowMessages();
+            $('#contact').addClass('arcuAnimated').addClass('bounceInRight');
+            setTimeout(function () {
+              $('#contact').removeClass('bounceInRight');
+            }, 1000);
+          });
+          $('#contact').on('arcontactus.successCallbackRequest', function () {
+            setTimeout(function () {
+              $('#contact').contactUs('closeCallbackPopup');
+            }, 1000);
+          });
+          arcuOptions = {
+            drag: false,
+            reCaptcha: false,
+            buttonSize: 'medium',
+            buttonText: false,
+            align: 'left',
+            iconsAnimationSpeed: 800,
+            iconsAnimationPause: 800,
+            menuHeaderText: 'Need help? Contact us!',
+            itemsIconType: 'rounded',
+            countdown: 0,
+            showMenuHeader: true,
+            showHeaderCloseBtn: true,
+            headerCloseBtnColor: '#ffffff',
+            headerCloseBtnBgColor: '#0b5e98',
+            promptPosition: 'side',
+            theme: '#0b5e98',
+            style: '',
+            callbackFormFields: {
+              phone: {
+                name: 'phone',
+                enabled: true,
+                required: true,
+                type: 'tel',
+                label: '',
+                placeholder: "+XXX-XX-XXX-XX-XX"
+              },
+              email: {
+                name: 'email',
+                enabled: true,
+                required: true,
+                type: 'email',
+                label: '',
+                maxlength: 80,
+                placeholder: "email"
+              },
+    
+            },
+            items: [
+              {
+                title: 'Messenger',
+                id: '1',
+                subTitle: 'Send Message directly',
+                icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 32C15.9 32-77.5 278 84.6 400.6V480l75.7-42c142.2 39.8 285.4-59.9 285.4-198.7C445.8 124.8 346.5 32 224 32zm23.4 278.1L190 250.5 79.6 311.6l121.1-128.5 57.4 59.6 110.4-61.1-121.1 128.5z"></path></svg>',
+                href: 'https://www.facebook.com/',
+                noContainer: true,
+                color: '#0084FF',
+                addons: [
+                  {
+                    href: '#',
+                    class: 'arcu-qr-addon',
+                    color: '#0b5e98',
+                    target: '_self',
+                  },
+                ]
+              },
+              {
+                title: 'Email us',
+                subTitle: 'exmple@gmail.com',
+                icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z"></path></svg>',
+                noContainer: true,
+                color: '#fff',
+                addons: [
+                  {
+                    href: '#',
+                    class: 'arcu-qr-addon',
+                    color: '#0b5e98',
+                    target: '_self',
+                  },
+                ]
+              },
+              {
+                title: 'Callback request',
+                subTitle: 'request to call',
+                icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>',
+                href: 'callback',
+                color: '#4EB625',
+                addons: [
+                  {
+                    href: '#',
+                    class: 'arcu-qr-addon',
+                    color: '#000000',
+                    target: '_self',
+                  }
+                ]
+              }
+            ]
+          };
+          // plugin init
+          $('#contact').contactUs(arcuOptions);
+      
+        });
+      </script>
+</body>
+
+</html>

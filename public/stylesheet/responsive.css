@@ -1,0 +1,49 @@
+@media (min-width: 576px) { 
+    .fontl{
+        font-size: 6pc!important;
+    }
+    .fonts{
+        font-size: 3pc!important;
+    }
+    #sec6{
+        padding: 7pc!important;
+    }
+    .blockquote-footer{
+        margin-left: 7pc;
+    }
+    .st2{
+        margin: 5pc auto;
+    }
+    .h-px {
+        height: 350px;
+    }
+ }
+ @media (min-width:768px) {
+     #imgcard{margin-top: 10pc;}
+     .epa{margin: auto 7rem!important;}
+    #forme{
+        border-left: 2px solid #0b5e98;
+    }
+    .wip{
+        width: 75%;
+    }
+    .h-px {
+        height: 400px;
+    }
+}
+@media (min-width:992px) {
+    #lgname{
+        position: absolute;
+        top: 1px;
+        left: 74px;
+    }
+    .h-px {
+        height: 500px;
+    }
+}
+@media (min-width:1200px) {
+    .h-px{
+        height: 650px;
+       }
+       #pimg{z-index: -1; bottom: 4pc; position: relative;}
+   }
